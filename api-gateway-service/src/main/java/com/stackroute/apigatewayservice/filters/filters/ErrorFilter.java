@@ -1,15 +1,15 @@
-package com.stackroute.apigatewayservice.filters;
+package com.stackroute.apigatewayservice.filters.filters;
 
 import com.netflix.zuul.ZuulFilter;
 
 /**
- * This filter is used to route the request
+ * This filter is invoked when an error occurs while handling the request.
  */
-public class RouteFilter extends ZuulFilter {
+public class ErrorFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "route";
+        return "error";
     }
 
     @Override

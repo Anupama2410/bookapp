@@ -1,16 +1,16 @@
 package com.stackroute.userjwtservice.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
-import static org.mockito.ArgumentMatchers.any;
+import com.stackroute.userjwtservice.model.User;
+import com.stackroute.userjwtservice.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.stackroute.userjwtservice.model.User;
-import com.stackroute.userjwtservice.repository.UserRepository;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
 
 public class UserServiceImplTest {
 

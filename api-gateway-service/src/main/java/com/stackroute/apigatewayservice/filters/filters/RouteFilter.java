@@ -1,15 +1,15 @@
-package com.stackroute.apigatewayservice.filters;
+package com.stackroute.apigatewayservice.filters.filters;
 
 import com.netflix.zuul.ZuulFilter;
 
 /**
- * This filter is invoked after the request has been routed.
+ * This filter is used to route the request
  */
-public class PostFilter extends ZuulFilter {
+public class RouteFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "post";
+        return "route";
     }
 
     @Override
@@ -24,7 +24,7 @@ public class PostFilter extends ZuulFilter {
 
     @Override
     public Object run() {
-        System.out.println("Inside Response Filter");
+        System.out.println("Inside Route Filter");
 
         return null;
     }

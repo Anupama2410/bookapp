@@ -1,4 +1,4 @@
-package com.stackroute.apigatewayservice.filters;
+package com.stackroute.apigatewayservice.filters.filters;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
